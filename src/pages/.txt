@@ -1,0 +1,41 @@
+.winner-page {
+  position: relative;
+  margin-top: 15%;
+  margin-left: 33%;
+  background-image: url(../component/Box-Texture.svg);
+  background-color: #974a2c;
+  border: 4px solid #833e29; /* Inner border */
+  width: fit-content;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 24px;
+}
+
+
+
+.winner-page::before,
+.winner-page::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -10px;
+  right: -10px;
+  bottom: -15px;
+  border: 20px solid #e78959; /* Middle border */
+  transform: translateY(-5px);
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.winner-page::after {
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -20px;
+  z-index: -2;
+  background-color: white;
+  border: 7px solid white; /* Outer border */
+  border-radius: 20px;
+  box-shadow: rgba(131, 62, 41, 0.25) -6px 6px 0px;
+}
